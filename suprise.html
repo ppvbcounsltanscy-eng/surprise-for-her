@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 🍬</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #5d4037;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        h1 { color: #ff69b4; }
+        .cat-img { width: 200px; border-radius: 50%; margin: 20px; }
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        #message { margin-top: 20px; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>A Little Something Sweet 🍬</h1>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJ4ZzVqbm14ZzVqbm14ZzVqbm14ZzVqbm14ZzVqbm14ZzVqJmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/ICOgGPwJp3Z0c/giphy.gif" alt="Cute Cat" class="cat-img">
+    
+    <p>I know I've been a handful. Let's reset the mood!</p>
+
+    <audio id="music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+    <button onclick="document.getElementById('music').play()">Play Our Song 🎵</button>
+
+    <br>
+    <button onclick="showApology()">I'm ready to talk</button>
+    <button onclick="showGrumpy()">I'm still a bit grumpy</button>
+
+    <div id="message"></div>
+</div>
+
+<script>
+    function showApology() {
+        document.getElementById('message').innerText = "I'm sorry for being annoying. You're the best part of my day, and I'd love to start fresh. 🐱✨";
+    }
+    function showGrumpy() {
+        document.getElementById('message').innerText = "I hear you. Take all the time you need, I'll be here whenever you're ready to smile again. 🍰";
+    }
+</script>
+
+</body>
+</html>
